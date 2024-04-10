@@ -22,6 +22,6 @@
   "main": "eslintrc.js",
   "scripts": {
     "lint": "eslint . --config=eslintrc.json",
-    "test": "npm run lint && tape test/*.js"
+    "test": "npm run lint && tape test.js"
   }
 }
