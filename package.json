@@ -1,15 +1,27 @@
 {
   "name": "phxjs/eslint-config",
   "description": "PhxJS ESLint Config",
-  "version":"0.0.0",
-  "devDependencies":{
-    "@types/eslint":"8.44.8",
-    "eslint":"8.55.0",
-    "eslint-config-standard":"17.1.0"
+  "version": "0.0.0",
+  "devDependencies": {
+    "eslint": "8.13.0",
+    "eslint-config-semistandard": "17.0.0",
+    "eslint-config-standard": "17.0.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-n": "15.2.4",
+    "eslint-plugin-promise": "6.0.0",
+    "tape": "5.5.3"
   },
-  "peerDependencies":{
-    "eslint":"^8.0.1",
-    "eslint-config-standard":"17.1.0"
+  "peerDependencies": {
+    "eslint": "8.13.0",
+    "eslint-config-semistandard": "17.0.0",
+    "eslint-config-standard": "17.0.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-n": "15.2.4",
+    "eslint-plugin-promise": "6.0.0"
   },
-  "main": ".eslintrc.js"
+  "main": "eslintrc.js",
+  "scripts": {
+    "lint": "eslint . --config=eslintrc.json",
+    "test": "npm run lint && tape test/*.js"
+  }
 }
