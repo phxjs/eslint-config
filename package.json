@@ -1,5 +1,5 @@
 {
-  "name": "phxjs/eslint-config",
+  "name": "@phxjs/eslint-config",
   "description": "PhxJS ESLint Config",
   "version": "0.0.0",
   "devDependencies": {
